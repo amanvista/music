@@ -5,25 +5,147 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="image-slider/style.css">
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
         <title>Portfolio website complete</title>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0" />
+        <!-- Linking Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+        
+
+
+        <style>
+            .services-section {
+                background-color: #fff;
+                padding: 40px 20px;
+                text-align: center;
+            }
+            .services-section h2 {
+                margin-bottom: 40px;
+            }
+            .services-container {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .service {
+                background-color: #eaeaea;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                margin: 10px;
+                width: 300px;
+                transition: transform 0.3s;
+            }
+            .service:hover {
+                transform: scale(1.05);
+            }
+            .service h3 {
+                margin-bottom: 15px;
+            }
+            .service p {
+                color: #555;
+            }
+        </style>
+    
     </head>
     <body>
+
+        <div class="slider-container">
+            <!-- Slider List Items -->
+            <div class="slider-wrapper swiper-wrapper">
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <!-- <h3 class="slide-subtitle">Slide 01</h3> -->
+                  <h2 class="slide-title">Elevate Your Music with <span class="home__title-color">Sonic Labs</span></h2>
+                  <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-facebook'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+                  <a href="contact.html" class="slide-button"><span>Contact Us</span></a>
+                </div>
+              </div>
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <h3 class="slide-subtitle">Slide 02</h3>
+                  <h2 class="slide-title">Sed ut perspiciatis unde omnis iste natus error sit!</h2>
+                  <p class="slide-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+                  <a href="#" class="slide-button"><span>Learn More</span></a>
+                </div>
+              </div>
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <h3 class="slide-subtitle">Slide 03</h3>
+                  <h2 class="slide-title">Nemo enim ipsam voluptatem quia voluptas!</h2>
+                  <p class="slide-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                  <a href="#" class="slide-button"><span>Learn More</span></a>
+                </div>
+              </div>
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <h3 class="slide-subtitle">Slide 04</h3>
+                  <h2 class="slide-title">Neque porro quisquam est qui dolorem!</h2>
+                  <p class="slide-description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                  <a href="#" class="slide-button"><span>Learn More</span></a>
+                </div>
+              </div>
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <h3 class="slide-subtitle">Slide 05</h3>
+                  <h2 class="slide-title">Quis autem velum iure reprehen derit qui voluptate!</h2>
+                  <p class="slide-description">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+                  <a href="#" class="slide-button"><span>Learn More</span></a>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Slider Pagination -->
+            <div class="slider-controls">
+              <ul class="slider-pagination">
+                <div class="slider-indicator"></div>
+                <li class="slider-tab current">Elevate Your Music</li>
+                <li class="slider-tab">Ipsum leositea pellentes nisiutoret</li>
+                <li class="slider-tab">Aenean consectetur blandit dictum</li>
+                <li class="slider-tab">Vestibulum antea primis faucibs</li>
+                <li class="slider-tab">Molestas minus conse alquid sed</li>
+              </ul>
+            </div>
+        
+            <!-- Slider Navigations (Prev/Next) -->
+            <div class="slider-navigations">
+              <button id="slide-prev" class="material-symbols-rounded">arrow_left_alt</button>
+              <button id="slide-next" class="material-symbols-rounded">arrow_right_alt</button>
+            </div>
+          </div>
+
+            <!-- Linking Swiper Script -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+            <!-- Linking Custom Script -->
+            <script src="image-slider/script.js"></script>
+        
+        
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Sonic Labs</a>
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="Logo Image" />
+                    <!-- <a href="#" class="nav__logo">Sonic Labs</a> -->
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Our Services</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">Courses</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Reviews</a></li>
+                        <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="./courses.html" class="nav__link">Our Courses</a></li>
+                        <li class="nav__item"><a href="./contact.html" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="./about.html" class="nav__link active-link">About</a></li>
                     </ul>
                 </div>
 
@@ -33,19 +155,22 @@
             </nav>
         </header>
 
-        <main class="l-main">
+        <main class="l-main" id="main_site_div" >
+            <!--===== HOME SLIDER =====-->
+
+
             <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
+            <!-- <section class="home bd-grid" id="home" >
                 <div class="home__data">
                     <h1 class="home__title">Elevate Your Music<br>with <span class="home__title-color">Sonic Labs</span></h1>
 
-                    <a href="#" class="button">Contact</a>
+                    <a href="contact.html" class="button">Contact</a>
                 </div>
 
                 <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-facebook'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin' ></i></a>
                 </div>
 
                 <div class="home__img">
@@ -59,187 +184,109 @@
                         </g>
                     </svg>
                 </div>
-            </section>
+            </section> -->
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+           
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Tarun</h2>
-                        <p class="about__text">Tarun has over 8+ years of experience as a Music Producer & performer is the driving force
-                            behind Sonic Labs.
-                            With a deep-rooted passion for music and a vision for transforming the way artists engage he
-                            founded Sonic Labs to create more than just a company—it’s a community.
-                            In the last three years he has mentored 100+students working as an Educatorwith top brands
-                            like Frontrow,Spingurus etc.His extensive background in the music & sound industry ensures that Sonic Labs is not just a
-                            service provider, but a trusted partner dedicated to excellence and growth.
-                            Tarun believes in the power of blending creativity, expertise, and dedication to deliver innovative
-                            solutions that resonate with both seasoned professionals and newcomers alike.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
+            <!--===== SERVICES =====-->
             <section class="skills section" id="skills">
-                <h2 class="section-title">Services</h2>
+                <h2 class="section-title">Our Services</h2>
 
                 <div class="skills__container bd-grid">          
                     <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Your Sound, Your Story—Let’s Create Together.</p>
+                        <!-- <h2 class="skills__subtitle">Music Production</h2> -->
                         <div class="skills__data">
                             <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
+                                <img src="./assets/img/piano.png" class="icon_progres" />
                                 <span class="skills__name">Music Production</span>
                             </div>
                             <div class="skills__bar skills__html">
 
                             </div>
                             <div>
-                                <span class="skills__percentage">95%</span>
+                                <span class="skills__percentage"></span>
                             </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">Mixing and Mastering</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">Recording</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Transform Your Creative Ideas into Sound.</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Phone Number" class="contact__input">
-                        <div class="container">
-                            <div class="contact__input">
-                                <label for="device">Choose Service</label>
-                                <select id="device" name="device">
-                                    <option value="desktop">Music Production</option>
-                                    <option value="tablet">Mixing and Mastering</option>
-                                    <option value="mobile">Recording</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea> -->
-                        <input type="button" value="Send" class="contact__button button">
-                        <label for="device">Have something else in mind? Reach out to us at - soniclabs@gmail.com | Mail</label>
-
-                    </form>
-                </div>
-            </section>
-
-             <!--===== Courses =====-->
-             <section class="skills section" id="skills">
-                <h2 class="section-title">Courses</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Your Sound, Your Story—Let’s Create Together.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">Music Production</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">Mixing and Mastering</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">DJ Course</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
+                        <p class="skills__text">Turn your creative vision into a fully realized track with our expert music production services. Whether you're starting with a rough idea or need help refining a melody, our team will work with you from start to finish, ensuring your music not only stands out but connects with listeners.</p>
+                        
+                        
+                        
                         
                     </div>
                     
                     <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                        <img src="./assets/img/work3.jpeg" alt="" class="skills__img">
+                    </div>
+                </div>
+                <div class="skills__container bd-grid"> 
+                    <div>              
+                        <img src="./assets/img/mixingroom.png" alt="" class="skills__img">
+                    </div>         
+                    <div class="service_container">
+                      
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="./assets/img/mixing.png" class="icon_progres" />
+                                <span class="skills__name">Mixing and Mastering</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <p class="skills__text">Take your sound to the next level with our precise mixing and mastering services. We ensure your track has the perfect balance, clarity, and depth, giving you a polished, professional sound that meets industry standards. Your music will be ready to compete on any platform.</p>
+                       
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+                   
+                </div>
+                <div class="skills__container bd-grid">          
+                    <div class="service_container">
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="./assets/img/mic.png" class="icon_progres" />
+                                <span class="skills__name">Recording</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <p class="skills__text">Capture your sound in the highest quality with our well-equipped studio.We provide the environment and expertise to get the best performance possible, preserving every detail of your unique sound.</p>
+                        <div class="skills__data">
+                          
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/recording.png" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">StudentGallery</h2>
+                <h2 class="section-title">Studio Gallery</h2>
 
                 <div class="work__container bd-grid">
                     <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
+                        <img src="assets/img/IMG_5045.png" alt="">
                     </a>
                     <a href="" class="work__img">
                         <img src="assets/img/work2.jpg" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
+                        <img src="assets/img/work3.jpeg" alt="">
                     </a>
                     <a href="" class="work__img">
                         <img src="assets/img/work4.jpg" alt="">
@@ -272,6 +319,7 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/slider.js"></script>
     </body>
 </html>

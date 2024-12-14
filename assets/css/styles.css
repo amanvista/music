@@ -2,6 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*===== VARIABLES CSS =====*/
 :root {
+  --primary-yellow: #d7b14f;
+  --primary-black: #242b2b;
+  --primary-white: #fefefe;
+  --secondary-yellow: #ca9c3d;
+  --secondary-pink: #d62bfb;
+  --secondary-blue: #4397ff;
   --header-height: 3rem;
   --font-semi: 600;
   /*===== Colores =====*/
@@ -42,12 +48,20 @@
 html {
   scroll-behavior: smooth;
 }
+.logo{
+  margin-left: -75px;
+}
+.logo img {
+  height: 47px; /* Adjust size as needed */
+  width:381px;
+  margin-right: 10px; /* Space between image and text */
+}
 
 body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--second-color);
+  color: var(--primary-white);
 }
 
 h1, h2, p {
@@ -74,7 +88,7 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--first-color);
+  color: var(--primary-yellow);
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
@@ -88,7 +102,7 @@ img {
   right: 0;
   margin: auto;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: var(--primary-yellow);
 }
 
 .section {
@@ -113,6 +127,21 @@ img {
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  margin: auto;
+  border: 1px solid #ddd; /* Optional: border for visual effect */
+  background-color: #f9f9f9; /* Background color for the slider */
+  text-align: center; /* Center-align text */
+  font-size: 1.5em; /* Font size for text */
+  padding: 20px;
+}
+/*===== HOME SLIDER =====*/
+
 
 /*===== NAV =====*/
 .nav {
@@ -183,29 +212,34 @@ img {
   position: relative;
   row-gap: 5rem;
   padding: 4rem 0 5rem;
+  
 }
+
 .home__data {
   align-self: center;
+  color:var(--primary-white);
 }
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
 }
 .home__title-color {
-  color: var(--first-color);
+  color: var(--primary-yellow);
 }
 .home__social {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: -50px;
 }
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
-  color: var(--second-color);
+  color: var(--primary-white);
 }
 .home__social-icon:hover {
-  color: var(--first-color);
+  color: var(--primary-yellow);
 }
 .home__img {
   position: absolute;
@@ -214,16 +248,23 @@ img {
   width: 260px;
 }
 .home__blob {
-  fill: var(--first-color);
+  fill: var(--primary-yellow);
 }
 .home__blob-img {
   width: 360px;
 }
 
+.l-main{
+  background: var(--primary-black);
+}
+
+/*SERVICES SECTION*/
+
+
 /*BUTTONS*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: var(--primary-yellow);
   color: #fff;
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
@@ -254,6 +295,7 @@ img {
 .skills__container {
   row-gap: 2rem;
   text-align: center;
+  padding: 20px;
 }
 .skills__subtitle {
   margin-bottom: var(--mb-2);
@@ -285,7 +327,7 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: var(--first-color);
+  background-color: var(--primary-yellow);
   height: 0.25rem;
   border-radius: 0.5rem;
   z-index: var(--z-back);
@@ -349,6 +391,10 @@ img {
   outline: none;
   margin-bottom: var(--mb-4);
   position: relative;
+  background-color: rgb(229, 235, 250);
+}
+.contact__input:focus {
+  background-color: lightblue;
 }
 
 .contact__input label {
@@ -379,7 +425,7 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
+  background-color: var(--primary-black);
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -519,3 +565,55 @@ img {
     width: 450px;
   }
 }
+
+/* Demo section CSS */
+#demo-section {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+#demo-header {
+  background-color: var(--primary-yellow);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+#demo-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+#demo-content {
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+#demo-content p {
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+#demo-button {
+  display: inline-block;
+  background-color: var(--primary-yellow);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+#demo-button:hover {
+  background-color: #005bb5;
+}
+
+.icon_progres{
+  width: 30px;
+  margin-right: 20px;
+  margin-left: -17px;
+}
+.skills__name{
+  font-size: 25px;
+}
+

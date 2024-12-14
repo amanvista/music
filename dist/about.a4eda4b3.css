@@ -1,0 +1,39 @@
+.services-section {
+  background-color: var(--primary-black);
+  text-align: center;
+  color: var(--primary-white);
+  padding: 40px 20px;
+}
+
+.services-section h2 {
+  margin-bottom: 40px;
+}
+
+.services-container {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+}
+
+.service {
+  background-color: #eaeaea;
+  border-radius: 8px;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  transition: transform .3s;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+.service:hover {
+  transform: scale(1.05);
+}
+
+.service h3 {
+  margin-bottom: 15px;
+}
+
+.service p {
+  color: #555;
+}
+/*# sourceMappingURL=about.a4eda4b3.css.map */

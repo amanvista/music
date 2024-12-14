@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/about.2005cfe8.css">
+        <link rel="stylesheet" href="/index.5b846179.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+        <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+        <title>Portfolio website complete</title>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0">
+        <!-- Linking Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+        
+
+
+        <style>.services-section {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+.services-section h2 {
+  margin-bottom: 40px;
+}
+
+.services-container {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+}
+
+.service {
+  background-color: #eaeaea;
+  border-radius: 8px;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  transition: transform .3s;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+.service:hover {
+  transform: scale(1.05);
+}
+
+.service h3 {
+  margin-bottom: 15px;
+}
+
+.service p {
+  color: #555;
+}
+</style>
+    
+    </head>
+    <body>
+
+        <div class="slider-container">
+            <!-- Slider List Items -->
+            <div class="slider-wrapper swiper-wrapper">
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <!-- <h3 class="slide-subtitle">Slide 01</h3> -->
+                  <h2 class="slide-title">Elevate Your Music with <span class="home__title-color">Sonic Labs</span></h2>
+                  <div class="home__social">
+                    <a href="" class="home__social-icon"><i class="bx bxl-facebook"></i></a>
+                    <a href="" class="home__social-icon"><i class="bx bxl-instagram"></i></a>
+                    <a href="" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
+                </div>
+                  <a href="/contact.html" class="slide-button"><span>Contact Us</span></a>
+                </div>
+              </div>
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <h3 class="slide-subtitle">Slide 02</h3>
+                  <h2 class="slide-title">Sed ut perspiciatis unde omnis iste natus error sit!</h2>
+                  <p class="slide-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+                  <a href="#" class="slide-button"><span>Learn More</span></a>
+                </div>
+              </div>
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <h3 class="slide-subtitle">Slide 03</h3>
+                  <h2 class="slide-title">Nemo enim ipsam voluptatem quia voluptas!</h2>
+                  <p class="slide-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                  <a href="#" class="slide-button"><span>Learn More</span></a>
+                </div>
+              </div>
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <h3 class="slide-subtitle">Slide 04</h3>
+                  <h2 class="slide-title">Neque porro quisquam est qui dolorem!</h2>
+                  <p class="slide-description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                  <a href="#" class="slide-button"><span>Learn More</span></a>
+                </div>
+              </div>
+              <div class="slider-item swiper-slide">
+                <div class="slide-content">
+                  <h3 class="slide-subtitle">Slide 05</h3>
+                  <h2 class="slide-title">Quis autem velum iure reprehen derit qui voluptate!</h2>
+                  <p class="slide-description">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+                  <a href="#" class="slide-button"><span>Learn More</span></a>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Slider Pagination -->
+            <div class="slider-controls">
+              <ul class="slider-pagination">
+                <div class="slider-indicator"></div>
+                <li class="slider-tab current">Elevate Your Music</li>
+                <li class="slider-tab">Ipsum leositea pellentes nisiutoret</li>
+                <li class="slider-tab">Aenean consectetur blandit dictum</li>
+                <li class="slider-tab">Vestibulum antea primis faucibs</li>
+                <li class="slider-tab">Molestas minus conse alquid sed</li>
+              </ul>
+            </div>
+        
+            <!-- Slider Navigations (Prev/Next) -->
+            <div class="slider-navigations">
+              <button id="slide-prev" class="material-symbols-rounded">arrow_left_alt</button>
+              <button id="slide-next" class="material-symbols-rounded">arrow_right_alt</button>
+            </div>
+          </div>
+
+            <!-- Linking Swiper Script -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+            <!-- Linking Custom Script -->
+            <script src="/index.f2c97f10.js"></script>
+        
+        
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div class="logo">
+                    <img src="/logo.f9c4dbb7.png" alt="Logo Image">
+                    <!-- <a href="#" class="nav__logo">Sonic Labs</a> -->
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="/courses.html" class="nav__link">Our Courses</a></li>
+                        <li class="nav__item"><a href="/contact.html" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="/about.html" class="nav__link active-link">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main" id="main_site_div">
+            <!--===== HOME SLIDER =====-->
+
+
+            <!--===== HOME =====-->
+            <!-- <section class="home bd-grid" id="home" >
+                <div class="home__data">
+                    <h1 class="home__title">Elevate Your Music<br>with <span class="home__title-color">Sonic Labs</span></h1>
+
+                    <a href="contact.html" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-facebook'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section> -->
+
+           
+
+            <!--===== SERVICES =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Our Services</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <!-- <h2 class="skills__subtitle">Music Production</h2> -->
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="/piano.5abe5ade.png" class="icon_progres">
+                                <span class="skills__name">Music Production</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <p class="skills__text">Turn your creative vision into a fully realized track with our expert music production services. Whether you're starting with a rough idea or need help refining a melody, our team will work with you from start to finish, ensuring your music not only stands out but connects with listeners.</p>
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                    <div>              
+                        <img src="/work3.82bf392e.jpeg" alt="" class="skills__img">
+                    </div>
+                </div>
+                <div class="skills__container bd-grid"> 
+                    <div>              
+                        <img src="/mixingroom.b74f0f64.png" alt="" class="skills__img">
+                    </div>         
+                    <div class="service_container">
+                      
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="/mixing.ec1f4c92.png" class="icon_progres">
+                                <span class="skills__name">Mixing and Mastering</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <p class="skills__text">Take your sound to the next level with our precise mixing and mastering services. We ensure your track has the perfect balance, clarity, and depth, giving you a polished, professional sound that meets industry standards. Your music will be ready to compete on any platform.</p>
+                       
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+                   
+                
+                <div class="skills__container bd-grid">          
+                    <div class="service_container">
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="/mic.9b053ab6.png" class="icon_progres">
+                                <span class="skills__name">Recording</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <p class="skills__text">Capture your sound in the highest quality with our well-equipped studio.We provide the environment and expertise to get the best performance possible, preserving every detail of your unique sound.</p>
+                        <div class="skills__data">
+                          
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+                    <div>              
+                        <img src="/recording.cb0ba785.png" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Studio Gallery</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="/IMG_5045.f8f9bf7c.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/work2.a516a838.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/work3.82bf392e.jpeg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/work4.421f97a1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/work5.182cbbb0.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/work6.734f37ff.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">SonicLabs</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <p class="footer__copy">&#169; SonicLabs. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="/courses.fc2f7771.js"></script>
+        <script src="/index.1c17075a.js"></script>
+    <script src="/music.3464ddca.js"></script></body>
+</html>

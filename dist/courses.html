@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/about.2005cfe8.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+
+        <title>Portfolio website complete</title>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <script type="text/javascript">(function() {
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init({
+        publicKey: "V8iXnR7VSBwCNWRK7"
+    });
+})();
+var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    slidesPerView: 'auto',
+    paginationClickable: true,
+    spaceBetween: 0
+});
+
+</script>
+        <script type="text/javascript">window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('service_mc6mcqp', 'template_d1j7fxs', this).then(()=>{
+            console.log('SUCCESS!');
+        }, (error)=>{
+            console.log('FAILED...', error);
+        });
+    });
+};
+
+</script>
+      
+    
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div class="logo">
+                    <img src="/logo.f9c4dbb7.png" alt="Logo Image">
+                    <!-- <a href="#" class="nav__logo">Sonic Labs</a> -->
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="/courses.html" class="nav__link active-link">Our Courses</a></li>
+                        <li class="nav__item"><a href="/contact.html" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="/about.html" class="nav__link">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main" id="main_site_div">
+            <!--===== HOME SLIDER =====-->
+
+
+        
+
+            <!--===== COURSES =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Our Courses</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Music Production</h2>
+                        <p class="skills__text">
+                            Embark on an exciting journey with our Music Production Course! Over the span of this course you'll immerse yourself in Drum Arrangements, Fundamentals of music theory, Sound design, and more. With guidance from seasoned professionals, you’ll gain the skills needed to turn your musical aspirations into reality.
+                        </p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="bx bxl-html5 skills__icon"></i>
+                                <span class="skills__name">Length: Yet to be decided</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="bx bxl-html5 skills__icon"></i>
+                                <span class="skills__name">Sessions: classes per week, 1 hour sessions</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="bx bxl-html5 skills__icon"></i>
+                                <span class="skills__name">Ongoing Support: Free follow up and Doubt Clearing Sessions</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+                    <div>              
+                        <img src="/work1.2f61f2f1.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+                <div class="skills__container bd-grid"> 
+                    <div>              
+                        <img src="/work2.a516a838.jpg" alt="" class="skills__img">
+                    </div>         
+                    <div class="service_container">
+                        <h2 class="skills__subtitle">Mixing and Mastering</h2>
+                        <p class="skills__text">
+                            Master the art of audio engineering with our Mixing and Mastering Course! In this program, you'll learn advanced mixing techniques and mastering essentials, learning how to create a polished and professional sound for your tracks. Get ready to elevate your music to industry standards!                       
+                        </p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="bx bxl-html5 skills__icon"></i>
+                                <span class="skills__name">Length: Yet to be decided</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="bx bxl-html5 skills__icon"></i>
+                                <span class="skills__name">Sessions: classes per week, 1 hour sessions</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="bx bxl-html5 skills__icon"></i>
+                                <span class="skills__name">Ongoing Support: Free Mix/Master guidance for tracks, and follow up sessions.</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+                <div class="skills__container bd-grid">          
+                    <div class="service_container">
+                        <h2 class="skills__subtitle">DJ Course</h2>
+                        <p class="skills__text">
+                            Your one-stop shop for DJ training. Over the duration of this course, you'll master crucial skills such as Beat Matching, Live Mixing using effects and much more. Gain practical experience using cutting-edge equipment and techniques to help you shine in any setting.
+                        </p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="bx bxl-html5 skills__icon"></i>
+                                <span class="skills__name">Length: Yet to be decided</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="bx bxl-html5 skills__icon"></i>
+                                <span class="skills__name">Sessions: classes per week, 1 hour sessions</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class="bx bxl-html5 skills__icon"></i>
+                                <span class="skills__name">Ongoing Support: Free practice sessions & Freelancing Show Placements</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+                    <div>              
+                        <img src="/work3.82bf392e.jpeg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+<!--===== WORK =====-->
+<div id="demo-section">
+    <div id="demo-header">
+        <h1>EXPERIENCE BEFORE YOU COMMIT</h1>
+    </div>
+    <div id="demo-content">
+        <p>Become a part of a 1-hour long demo class to experience our teaching style and see why we're the right choice for your learning needs.</p>
+        <p>Decide whether to continue after the first week!</p>
+        <a href="#" id="demo-button">Join Demo Class</a>
+    </div>
+</div>
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">StudentGallery</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="/work1.2f61f2f1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/work2.a516a838.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/work3.82bf392e.jpeg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/work4.421f97a1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/work5.182cbbb0.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="/work6.734f37ff.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">SonicLabs</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <p class="footer__copy">&#169; SonicLabs. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="/courses.fc2f7771.js"></script>
+    <script src="/courses.5e72f5c6.js"></script></body>
+</html>
